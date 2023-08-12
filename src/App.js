@@ -5,8 +5,8 @@ import { Input } from './components/input/input';
 function App() {
   return (
     <div className="App">
-      <Input tip="number" placeholder="phone" />
-      <Input tip="string" placeholder="name" />
+      <Input tip="number" placeholder="phone" value="5" />
+      <Input tip="string" placeholder="name"/>
     </div>
   );
 }
