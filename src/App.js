@@ -5,20 +5,40 @@ import { Button } from './components/button/button';
 import { useState } from 'react';
 import { Product } from './components/product/product';
 import { fakeData } from './components/product/fakedata';
+import { Melting } from './components/melting/melting';
+import { Model } from './components/model/model';
 function App() {
-  const [data,setData] = useState()
-  const [color,setColor] = useState('black')
-
-  const changeColor = () =>{
-      setColor(data)
-      
-}
+  const [isShow, setShow] = useState("none")
+  const [data, setData] = useState(fakeData)
+  const handlerdelete = (name) =>{
+    setData((state)=>{
+      let x = state.filter((item) => item.name !== name )
+      return [
+        ...x
+      ]
+    })
+    console.log(data,'llll');
+  }
   return (
-    <div className="App">
-    
-      {fakeData.map((item) =>{
-         return ( <Product item = {item} />)
-      })}
+    <div className="App"> 
+        <Model style={isShow}/>
+        <button onClick={() => {
+          if(isShow == "none"){
+            setShow("block") 
+          }else (
+            setShow("none")
+          )
+          
+          
+          
+          
+          }}>click</button>
+        {
+         fakeData.map((item) =>{
+          return ( <Product handlerdelete={handlerdelete} item = {item} />)
+        })
+        }
+       
     </div>
   );
 }
