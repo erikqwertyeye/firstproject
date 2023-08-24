@@ -10,6 +10,15 @@ import { Model } from './components/model/model';
 function App() {
   const [isShow, setShow] = useState("none")
   const [data, setData] = useState(fakeData)
+  const [itemData,setItem] = useState({name:'', desc:""})
+  const handlerEdit = (item) =>{
+    setItem(item)
+    if(isShow == "none"){
+      setShow("block") 
+    }else (
+      setShow("none")
+    )
+  }
   const handlerdelete = (name) =>{
     setData((state)=>{
       let x = state.filter((item) => item.name !== name )
@@ -21,21 +30,11 @@ function App() {
   }
   return (
     <div className="App"> 
-        <Model style={isShow}/>
-        <button onClick={() => {
-          if(isShow == "none"){
-            setShow("block") 
-          }else (
-            setShow("none")
-          )
-          
-          
-          
-          
-          }}>click</button>
+        <Model itemData={itemData} style={isShow}/> 
+            
         {
          fakeData.map((item) =>{
-          return ( <Product handlerdelete={handlerdelete} item = {item} />)
+          return ( <Product handlerEdit={handlerEdit}  handlerdelete={handlerdelete} item = {item} />)
         })
         }
        

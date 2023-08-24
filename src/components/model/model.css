@@ -4,6 +4,8 @@
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    left:500px
 }
 input{
     width: 350px;

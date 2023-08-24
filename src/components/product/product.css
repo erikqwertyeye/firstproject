@@ -29,11 +29,16 @@
     border:inherit;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .productDelete{
     width: 20%;
-    height: 100px;
+    height: 30px;
     border:inherit;
+}
+.productDelete img{
+    width:70%;
+    height: 100%;
 }
 .openButton{
     width: 100px;
@@ -42,7 +47,4 @@
     display: flex;
     justify-content:center;
     align-items: center;
-}
-.openButton p{
-    
 }
