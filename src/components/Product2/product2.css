@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-image: url(../background.jpg);
+    background-size: cover;
+}
+.head{
+    width: 100%;
+    height: 150px;
+    /* border: inherit;  */
+    display: flex;
+}
+.headlogo{
+    width: 50%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createbuttonbox{
+    width: 200px;
+    height: 50px;
+    border: inherit;
+    background-color: rgb(165, 241, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size:15px;
+    border-radius:10px;
+}
+
+.headinputbox{
+    width: 50%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    align-items: center;
+}
+.headinput{
+    width: 600px;
+    height: 60px;
+    border: inherit;
+    border-radius: 10px;
+    display: flex;
+    align-content: end;
+    gap: 20px;
+}
+.headinputDeletebox{
+    width: 200px;
+    height: 40px;
+    border: inherit;
+}
+.headinputSearchbox{
+    width: 160px;
+    height: 40px;
+    border: inherit;
+}
+.productbigbox{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+}
+.product2Box{
+    width: 20%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid red;
+}
+.product3Box{
+    width: 20%;
+    height:auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.product4Box{
+    width: 20%;
+    height:auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product5Box{
+    width: 20%;
+    height:auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.product6Box{
+    width: 20%;
+    height:auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.product2imgbox{
+    width: 100%;
+    height:150px;
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.product2imgbox p{
+    font-size: 40px;
+    position: absolute;
+    left:90px;
+    top:40px;
+}
+.product3imgbox{
+    width: 100%;
+    height:150px;
+    border: inherit;
+}
+.product4imgbox{
+    width: 100%;
+    height:150px;
+    border: inherit;
+}
+.product5imgbox{
+    width: 100%;
+    height:150px;
+    border: inherit;
+}
+.product6imgbox{
+    width: 100%;
+    height:150px;
+    border: inherit;
+}
+.product2imgboxtopbox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+    background-color: rgb(156, 156, 255);
+}
+.product2imgboxbottombox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+
+}
+.product3imgboxtopbox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+    background-color: rgb(165, 241, 77);
+
+}
+.product4imgboxtopbox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+    background-color: orange;
+}
+.product5imgboxtopbox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+    background-color: rgb(233, 233, 142);
+}
+.product6imgboxtopbox{
+    width: 100%;
+    height: 30px;
+    border: inherit;
+}
+.product2cont1{
+    width: 100%;
+    height: 200px;
+    /* border: inherit; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+
+}
+.product2cont1Pricebox{
+    width: 100%;
+    height: 20px;
+    border: inherit;
+    display: flex;
+    align-items: center;
+}
+.product2cont1Dealbox{
+    width: 100%;
+    height: 20px;
+    border: inherit;
+    display: flex;
+    align-content: center;
+}
+.product2cont1Datebox{
+    width: 100%;
+    height: 20px;
+    border: inherit;
+    display: flex;
+    align-items: center;
+}
+.product2cont1Personbox{
+    width: 100%;
+    height: 20px;
+    border: inherit;
+    display: flex;
+    align-items: center;
+}
+.product2cont2{
+    width: 100%;
+    height: 200px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+}
+.product2cont3{
+    width: 100%;
+    height: 200px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+
+}
+.product3cont1{
+    width: 100%;
+    height:250px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+
+}
+.product4cont1{
+    width: 100%;
+    height: 200px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+
+}
+.product4cont2{
+    width: 100%;
+    height: 200px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+}
+.product5cont1{
+    width: 100%;
+    height:250px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+
+}
+.product6cont1{
+    width: 100%;
+    height:250px;
+    /* border: inherit; */
+    border-radius: 20px;
+    background-color: white;
+
+}

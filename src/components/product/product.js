@@ -1,5 +1,5 @@
     import { Model } from "../model/model"
-import "./product.css"
+    import "./product.css"
     export const Product = ({item , handlerdelete,handlerEdit}) =>{
         return (<div className='productBox'>
             <img src={item.img} className='productimg'/>

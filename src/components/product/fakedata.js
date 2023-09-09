@@ -1,51 +1,52 @@
 
-export const fakeData = [
+
+export const UserData=[
     {
-        img:"phone.jpg",
-        name:"product1",
-        desc:"describtion for product1",
-        delete:"delete.jpg"
+        firstName: 'Gurgen',
+        lastName:"Gharibyan",
+        id: "1",
     },
     {
-        img:"phone.jpg",
-        name:"product2",
-        desc:"describtion for product2",
-        delete:"delete.jpg"
-
+        firstName: 'Adolf',
+        lastName:"Hitler",
+        id: "2",
     },
     {
-        img:"phone.jpg",
-        name:"product3",
-        desc:"describtion for product3",
-        delete:"delete.jpg"
-
+        firstName: 'Stalin',
+        lastName:"Iosif",
+        id: "3",
     },
     {
-        img:"phone.jpg",
-        name:"product4",
-        desc:"describtion for product4",
-        delete:"delete.jpg"
-
+        firstName: 'Tomas',
+        lastName:"Shelby",
+        id: "4",
     },
     {
-        img:"phone.jpg",
-        name:"product5",
-        desc:"describtion for product5",
-        delete:"delete.jpg"
+        firstName: 'Rouzvelt',
+        lastName:"Karapetyan",
+        id: "5",
+    }
+]
 
+export const Status=[
+    {
+        label:"new",
+        value:1,
+        id:1,
     },
     {
-        img:"phone.jpg",
-        name:"product6",
-        desc:"describtion for product6",
-        delete:"delete.jpg"
-
+        label:"in progress",
+        value:2,
+        id:2,
     },
     {
-        img:"phone.jpg",
-        name:"product7",
-        desc:"describtion for product7",
-        delete:"delete.jpg"
-
+        label:"testing",
+        value:"3",
+        id:3,
+    },
+    {
+        label:"done",
+        value:4,
+        id:4,
     }
 ]

@@ -14,7 +14,7 @@ const oneChange = (e) =>{
 
 
 
-    
+        
 }
 return (<input type={tip}  onChange={(e) =>oneChange(e)} placeholder={placeholder} />)
 
