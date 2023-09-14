@@ -1,34 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
-import { Input } from './components/input/input';
-import { Button } from './components/button/button';
 import { useState } from 'react';
 import { Product } from './components/product/product';
-
-import { Melting } from './components/melting/melting';
 import { Model } from './components/model/model';
 import { Product2 } from './components/Product2/product2';
 import { Modal } from './components/modal/modal';
+import { useDispatch, useSelector } from 'react-redux';
+import { isShow } from './store/index';
 function App() {
-  const [isShow, setShow] = useState("none")
+ // const [isShow, setShow] = useState("none")
+  const [isShow2, setShow2] = useState("none")
   const [data, setData] = useState([])
+  const dispatch = useDispatch()
+  const isShowData = useSelector((state) =>state.index.show)
+
   const [itemData,setItem] = useState({name:'', desc:""})
   const handlerEdit = () =>{
-    if(isShow == "none"){
-      setShow("block") 
+    dispatch(isShow({show:true}))
+    if(isShowData){
+      dispatch(isShow({show:false}))
     }else (
-      setShow("none")
+      dispatch(isShow({show:true}))
+
     )
   }
-  const handlerdelete = (name) =>{
-    setData((state)=>{
-      let x = state.filter((item) => item.name !== name )
-      return [
-        ...x
-      ]
-    })
-    console.log(data,'llll');
+  const createbox =()=>{
+    if(isShow2 == "none"){
+      setShow2("block") 
+    }else (
+      setShow2("none")
+    )
   }
+  
   return (
     <div className="App"> 
         {/* <Model itemData={itemData} style={isShow}/> 
@@ -40,10 +42,11 @@ function App() {
         } */}
         
          <Product2 handlerEdit = {handlerEdit}/>
-        <Modal style = {isShow}/>
-        
+        <Modal createbox = {createbox} style = {isShow}/>
     </div>
-  );
-}
+  );  
+  }
+
+
 
 export default App;
