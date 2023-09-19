@@ -11,17 +11,36 @@
 }
 .head{
     width: 100%;
-    height: 100px;
-    border: inherit; 
-    display: flex;
+    height:200px;
+    /* border:1px solid red;  */
 }
-.headlogo{
+.headtopbox{
+    width: 100%;
+    height: 50%;
+    border: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+.headlogobox{
     width: 50%;
+    height:100%;
+    border: inherit;
+    display: flex;
+    align-items: center;
+}
+.haedlogo{
+    width:250px;
     height: 100%;
     border: inherit;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left: 20px;
+}
+.haedlogo p{
+    font-size:50px;
+    font-weight:400;
+    color: white;
+
 }
 .createbuttonbox{
     width: 200px;
@@ -61,10 +80,64 @@
     height: 40px;
     border: inherit;
 }
+.headLine{
+    width:100%;
+    height: 2px;
+    background-color: white;
+
+}
+.headbottombox{
+    width: 100%;
+    height: 50%;
+    border: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+.headbottomboxlist1{
+    width:25%;
+    height:40px;
+    border: inherit;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.headbottomboxlist1 ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.headbottomboxlist1 ul li{
+    list-style: none;
+    color: white;
+}
+.headbottomboxlist2{
+    width:30%;
+    height:40px;
+    border: inherit;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.headbottomboxlist2 ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.headbottomboxlist2 ul li{
+    list-style: none;
+    color:white;
+}
 .productbigbox{
     width: 100%;
     height: auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     gap: 20px;
 }
@@ -75,6 +148,7 @@
     flex-direction: column;
     gap: 20px;
     border: 1px solid red;
+    border-right: 30px;
 }
 .product3Box{
     width: 20%;
@@ -83,6 +157,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-right: 30px;
 
 }
 .product4Box{
@@ -92,6 +167,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-right: 30px;
+
 }
 .product5Box{
     width: 20%;
@@ -100,6 +177,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;   
+    border-right: 30px;
+
 }
 .product6Box{
     width: 20%;
@@ -108,6 +187,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    border-right: 30px;
+
 }
 .product2imgbox{
     width: 100%;
@@ -118,12 +199,7 @@
     justify-content: space-between;
     position: relative;
 }
-.product2imgbox p{
-    font-size: 40px;
-    position: absolute;
-    left:90px;
-    top:40px;
-}
+
 .product3imgbox{
     width: 100%;
     height:150px;
@@ -149,12 +225,39 @@
     height: 30px;
     border: inherit;
     background-color: rgb(156, 156, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.product2imgboxtopbox p{
+    font-size:15px;
+    font-weight: bold;
+}
+.product2imgboxmiddlebox{
+    width: 100%;
+    height:30px;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2imgboxmiddlebox p{
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
 }
 .product2imgboxbottombox{
     width: 100%;
     height: 30px;
     border: inherit;
-
+    background-color: rgba(255, 255, 255, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2imgboxbottombox p{
+    color: white;
+    font-size: 20px;
 }
 .product3imgboxtopbox{
     width: 100%;
@@ -183,42 +286,152 @@
 .product2cont1{
     width: 100%;
     height: 200px;
-    /* border: inherit; */
-    border-radius: 20px;
+    border: inherit;
+    /* border-radius: 20px; */
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+.product2cont1infobox{
+    width:80%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap: 10px
+    ;
+}
+.product2cont1iconbox{
+    width:20%;
+    height: 100%;
+    border: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    background-color: white;
-
+    align-items: center;
+}
+.product2cont1iconboxicon1{
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
+}
+.product2cont1iconboxicon2{
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
+}
+.product2cont1iconboxico3{
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
+}
+.product2cont1iconboxicon4{
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
 }
 .product2cont1Pricebox{
-    width: 100%;
+    width:90%;
     height: 20px;
     border: inherit;
     display: flex;
     align-items: center;
+    padding-left:20px;
+}
+.product2cont1Pricebox p{
+    font-size:15px;
+    color: rgb(78, 77, 77);
 }
 .product2cont1Dealbox{
-    width: 100%;
+    width: 90%;
     height: 20px;
     border: inherit;
     display: flex;
     align-content: center;
+    padding-left:20px;
+
+}
+.product2cont1Dealbox p{
+    color: black;
 }
 .product2cont1Datebox{
-    width: 100%;
+    width: 90%;
     height: 20px;
     border: inherit;
     display: flex;
     align-items: center;
+    padding-left:20px;
+    
+}
+.product2cont1Datebox p{
+    font-size:13px;
+    color: rgb(78, 77, 77);
 }
 .product2cont1Personbox{
-    width: 100%;
+    width:90%;
     height: 20px;
     border: inherit;
     display: flex;
     align-items: center;
+    padding-left:20px;
+
+}
+.product2cont1botombox{
+    width:100%;
+    height: 30px;
+    border: inherit;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    top:170px;
+    left:2px;
+}
+.product2cont1botomboxActivity{
+    height: 100%;
+    border: inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1botomboxActivity p{
+    font-size:15px;
+}
+.product2cont1botomboxPerson{
+    width: 50%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+}
+.product2cont1botomboxPerson p{
+    font-size: 15px;
+}
+.product2cont1botomboxPersonnDate{
+    width: 60%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1botomboxPersonnImg{
+    width:40%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1botomboxPersonnImg div{
+    width: 20px;
+    height:20px;
+    border: inherit;
+    border-radius: 50px;
+}
+
+.product2cont1Personbox p{
+    font-size:13px;
+    color: rgb(6, 90, 247);
 }
 .product2cont2{
     width: 100%;

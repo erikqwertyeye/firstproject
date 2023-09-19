@@ -6,6 +6,8 @@ import { Product2 } from './components/Product2/product2';
 import { Modal } from './components/modal/modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { isShow } from './store/index';
+import {setcreateData} from './store/index'
+
 function App() {
  // const [isShow, setShow] = useState("none")
   const [isShow2, setShow2] = useState("none")
@@ -14,6 +16,7 @@ function App() {
   const isShowData = useSelector((state) =>state.index.show)
 
   const [itemData,setItem] = useState({name:'', desc:""})
+
   const handlerEdit = () =>{
     dispatch(isShow({show:true}))
     if(isShowData){
@@ -23,12 +26,9 @@ function App() {
 
     )
   }
-  const createbox =()=>{
-    if(isShow2 == "none"){
-      setShow2("block") 
-    }else (
-      setShow2("none")
-    )
+  const createbox =(itemData)=>{
+    dispatch(setcreateData({data:itemData}))
+    
   }
   
   return (
@@ -41,8 +41,9 @@ function App() {
         })
         } */}
         
-         <Product2 handlerEdit = {handlerEdit}/>
+         <Product2 item = {setItem} handlerEdit = {handlerEdit}/>
         <Modal createbox = {createbox} style = {isShow}/>
+
     </div>
   );  
   }

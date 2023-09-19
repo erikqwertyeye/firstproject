@@ -5,6 +5,12 @@ import { UserData} from '../product/fakedata'
 import { Status } from '../product/fakedata'
 import {useSelector} from 'react-redux'
 export const Modal = ({ style , createbox}) => {
+    const [createData, setcreateData] = useState({
+        name:'',
+        desc:"",
+        statusId:0,
+        userId:0
+    })
     const isShow = useSelector((state) =>state.index.show)
     const options = [
         { value: 'chocolate', label: 'Chocolate' },
@@ -20,11 +26,32 @@ export const Modal = ({ style , createbox}) => {
         <div>
             <div className="box" style={{ display:isShow ? 'block' : 'none'}}>
                 <div className="inputbox">
-                    <input placeholder='Name'/>
-                    <input placeholder='Username'/>
-                    <Select options={arr}/>
-                    <Select options={Status}/>
-                    <button onClick={()=> createbox()} className="createbuttonbox">CREATE</button>
+                    <input onChange={(item)=>setcreateData(state=>{
+                        return {
+                            ...state,
+                            name:item.target.value
+                        }
+                      
+                    })} placeholder='Name'/>
+                    <input onChange={(item)=>setcreateData(state=>{
+                        return{
+                            ...state,
+                            desc:item.target.value
+                        }
+                    })}placeholder='Username'/>
+                    <Select onChange={(item)=>setcreateData(state =>{
+                        return{
+                            ...state,
+                            userId:item.value
+                        }
+                    })} options={arr}/>
+                    <Select  onChange={(item)=>setcreateData(state =>{
+                        return{
+                            ...state,
+                            statusId:item.value
+                        }
+                    })} options={Status}/>
+                    <button onClick={()=> createbox(createData)} className="createbuttonbox">CREATE</button>
                 </div>
             </div>
         </div>

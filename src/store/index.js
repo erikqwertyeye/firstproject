@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  show:false
+  show:false,
+  data:[],
+  createdata:[],
 }
 
 export const indexSlice = createSlice({
@@ -10,11 +12,21 @@ export const indexSlice = createSlice({
   reducers: {
     isShow: (state , actions) => {
       state.show = actions.payload.show
+    },
+    setData :(state,action)=>{
+      state.data = action.payload.data 
+    
+    },
+    setcreateData:(state,action)=>{
+      state.createdata = [
+        ...state.data,
+       action.payload.data 
+      ]
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const {isShow = {isShow} } = indexSlice.actions
+export const {isShow,setData,setcreateData } = indexSlice.actions
 
 export default indexSlice.reducer

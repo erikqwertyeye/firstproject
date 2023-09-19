@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./model.css"
 export const Model = ({style,itemData}) =>{
     const [data, setData] = useState()
+    const 
     onchange = (e) =>{
         setData(e.target.value)
     }
