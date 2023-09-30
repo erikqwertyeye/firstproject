@@ -1,6 +1,7 @@
 import "./product2.css"
 import { useState } from "react"
 import { Modal } from "../modal/modal"
+import { setcreateData } from "../../store"
 export const Product2 = ({handlerEdit}) =>{
     return (
         
@@ -12,10 +13,39 @@ export const Product2 = ({handlerEdit}) =>{
                     <div className="haedlogo">
                         <p>Dael</p>
                     </div>
-                <button onClick={() => handlerEdit()} className="createbuttonbox">CREATE</button>
+                <button onClick={() => handlerEdit()} className="createbuttonbox">
+                    <div className="createbuttonbox_box1">
+                        <p>CREATE</p>
+                    </div>
+                    <div className="createbuttonbox_box2">
+                        <img src={'../createicon.png'}/>
+                    </div>
+
+                </button>
+                <div className="headgeneralbox">
+                    <div className="headgeneralbox_menu">
+                        <img src={'../menu.png'}/>
+                    </div>
+                    <div className="headgeneralbox_text">
+                        <p>GENERAL</p>
+                    </div>
+                    <div className="headgeneralbox_icon">
+                        <div>10</div>
+                        <img src={'../createicon.png'}/>
+                    </div>
+                </div>
                 </div>
                 <div className="headinputbox">
-                    <input className="headinput"/>
+                    <div className="headinput">
+                        <div className="headinput_box1">
+                            <p>Deals in prgress</p>
+                            <img src={'../deleteicon.png'}/>
+                        </div>
+                        <div className="headinput_box2">
+                            <img src={"../plusicon.png"}/>
+                            <p>search</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="headLine"></div>
             </div>
@@ -30,96 +60,29 @@ export const Product2 = ({handlerEdit}) =>{
                 </div>
                 <div className="headbottomboxlist2">
                     <ul>My:
-                        <li>Inbound</li>
-                        <li>Planet</li>
-                        <li>More</li>
+                        <li>
+                        <div className="headbottomboxlist_icon1">
+                            <p>0</p>
+                        </div>
+                        Inbound</li>
+                        <li>
+                            <div className="headbottomboxlist2_icon2">
+                                <p>10</p>
+                            </div>
+                            Planet</li>
+                        <li>
+                            More
+                            <div className="headbottomboxlist2_icon3">
+                                <p>2</p>
+                            </div>
+                            </li>
                     </ul>
                 </div>
 
             </div>
             </div>
-            <div className="productbigbox">
-            <div className="product2Box">
-            <div className="product2imgbox">
-                <div className="product2imgboxtopbox">
-                    <p>New </p>
-                </div>
-                <div className="product2imgboxmiddlebox">
-                    <p>$46</p>
-                </div>
-                <div className="product2imgboxbottombox">
-                    <p>+ Quick Deal</p>
-                </div>
             </div>
-            <div className="product2cont1">
-                <div className="product2cont1infobox">
-                <div className="product2cont1Dealbox">
-                    <p>Deal #71 </p>
-                </div>
-                <div className="product2cont1Pricebox">
-                    <p>413.91</p>
-                </div>
-                <div className="product2cont1Datebox">
-                    <p>yesterday 3:46pm </p>
-                </div>
-                <div className="product2cont1Personbox">
-                    <p>Emily Walker</p>
-                </div>
-                <div className="product2cont1botombox">
-                    <div className="product2cont1botomboxActivity">
-                        <p>+ Activity</p>
-                    </div>
-                    <div className="product2cont1botomboxPerson">
-                        <div className="product2cont1botomboxPersonnDate">
-                            <p>yesterday</p>
-                        </div>
-                        <div className="product2cont1botomboxPersonnImg">
-                            <div></div>
-                        </div>
-
-                    </div>
-
-                </div>
-                </div>
-                <div className="product2cont1iconbox">
-                    <div className="product2cont1iconboxicon1"></div>
-                    <div className="product2cont1iconboxicon2"></div>
-                    <div className="product2cont1iconboxicon3"></div>
-                    <div className="product2cont1iconboxicon4"></div>
-
-                </div>
-            </div>
-          
-
-        </div>
-        <div className="product3Box">
-            <div className="product3imgbox">
-                <div className="product3imgboxtopbox"></div>
-            </div>
-     
-        </div>
-        <div className="product4Box">
-            <div className="product4imgbox">
-                <div className="product4imgboxtopbox"></div>
-            </div>
- 
-        </div>
-        <div className="product5Box">
-            <div className="product5imgbox">
-                <div className="product5imgboxtopbox"></div>
-            </div>
-
-          
-        </div>
-        <div className="product6Box">
-            <div className="product6imgbox">
-                <div className="product6imgboxtopbox"></div>
-            </div>
-   
-          
-        </div>
-            </div>
-        </div>
+    
         
         
 

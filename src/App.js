@@ -7,7 +7,8 @@ import { Modal } from './components/modal/modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { isShow } from './store/index';
 import {setcreateData} from './store/index'
-
+import { Product3 } from './components/product3/product3';
+import { Product3box } from './components/product3box/product3box';
 function App() {
  // const [isShow, setShow] = useState("none")
   const [isShow2, setShow2] = useState("none")
@@ -41,9 +42,9 @@ function App() {
         })
         } */}
         
-         <Product2 item = {setItem} handlerEdit = {handlerEdit}/>
+        <Product2 item = {setItem} handlerEdit = {handlerEdit} />
         <Modal createbox = {createbox} style = {isShow}/>
-
+        <Product3/>
     </div>
   );  
   }

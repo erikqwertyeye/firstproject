@@ -5,9 +5,11 @@
 }
 .bigbox{
     width: 100%;
-    height: 100%;
+    height:100%;
     background-image: url(../background.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .head{
     width: 100%;
@@ -27,6 +29,8 @@
     border: inherit;
     display: flex;
     align-items: center;
+    gap: 20px;
+
 }
 .haedlogo{
     width:250px;
@@ -43,7 +47,7 @@
 
 }
 .createbuttonbox{
-    width: 200px;
+    width: 170px;
     height: 50px;
     border: inherit;
     background-color: rgb(165, 241, 77);
@@ -52,8 +56,99 @@
     align-items: center ;
     font-size:15px;
     border-radius:10px;
+    transition:0.2s;
+}
+.createbuttonbox:hover{
+    transform: scale(0.9);
+}
+.createbuttonbox_box1{
+    width:80%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createbuttonbox_box1 p{
+    font-size:13px;
+    font-weight: bold;
+    color:rgb(83, 82, 82);
+}
+.createbuttonbox_box2{
+    width:20%;
+    height: 100%;
+    border: inherit;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.createbuttonbox_box2 img{
+    width:70%;
+    height: 40%;
+}
+.headgeneralbox{
+    width: 190px;
+    height:50px;
+    border:1px solid white;
+    background-color: rgba(255, 255, 255, 0.205);
+    display: flex;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.headgeneralbox:hover{
+    transform: scale(0.9);
+}
+.headgeneralbox_text{
+    width:50%;
+    height: 100%;
+    /* border: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headgeneralbox_text p{
+    color: white;
+    font-size:15px;
+    font-weight: bold;
+}
+.headgeneralbox_icon{
+    width:30%;
+    height: 100%;
+    /* border: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headgeneralbox_icon div{
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
 
+.headgeneralbox_icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.headgeneralbox_menu{
+    width:20%;
+    height: 100%;
+    /* border: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headgeneralbox_menu img{
+    width:30px;
+    height:30px ;
+}
 .headinputbox{
     width: 50%;
     height: 100%;
@@ -63,22 +158,50 @@
 }
 .headinput{
     width: 600px;
-    height: 60px;
-    border: inherit;
+    height:50px;
+    border:1px solid white;
     border-radius: 10px;
+    padding: 10px 0px 10px 10px;
     display: flex;
-    align-content: end;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.205);
+
+}
+.headinput_box1{
+    width:30%;
+    height:40px;
+    /* border: inherit; */
+    background-color: rgba(108, 193, 226, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
-.headinputDeletebox{
-    width: 200px;
-    height: 40px;
-    border: inherit;
+.headinput_box1 p{
+    color: white;
+    font-size:15px;
 }
-.headinputSearchbox{
-    width: 160px;
+.headinput_box1 img{
+    width: 10px;
+    height:10px;
+}
+.headinput_box2{
+    width:20%;
     height: 40px;
-    border: inherit;
+    /* border:inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+    ;
+}
+.headinput_box2 img{
+    width:15px;
+    height:15px;
+}
+.headinput_box2 p{
+    font-size:15px;
+    color: white;
 }
 .headLine{
     width:100%;
@@ -113,6 +236,10 @@
 .headbottomboxlist1 ul li{
     list-style: none;
     color: white;
+    transition: 0.2s;
+}
+.headbottomboxlist1 ul li:hover{
+    transform: scale(1.1);
 }
 .headbottomboxlist2{
     width:30%;
@@ -129,67 +256,69 @@
     align-items: center;
     gap: 20px;
     color: white;
+    /* border: 1px solid red; */
+}
+.headbottomboxlist2_icon1{
+    width: 18px;
+    height:18px;
+    border: inherit;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 218, 218);
+}
+.headbottomboxlist2_icon2{
+    width: 17px;
+    height:17px;
+    border: inherit;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.headbottomboxlist2_icon3{
+    width:18px;
+    height:18px;
+    border: inherit;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 218, 218);
+}
+.headbottomboxlist2_icon3 p{
+    font-size: 10px;
+    color: white;
+}
+
+.headbottomboxlist12_icon2 p{
+    font-size: 10px;
+    color: white;
+}
+.headbottomboxlist2_icon1 p{
+    color: white;
+    font-size:10px;
 }
 .headbottomboxlist2 ul li{
     list-style: none;
     color:white;
-}
-.productbigbox{
-    width: 100%;
-    height: auto;
-    border: 1px solid red;
+    transition: 0.2s;
+    border: inherit;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 5px;
 }
-.product2Box{
-    width: 20%;
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: 1px solid red;
-    border-right: 30px;
+.headbottomboxlist2 ul li:hover{
+    transform: scale(1.1);
 }
-.product3Box{
-    width: 20%;
-    height:auto;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-right: 30px;
 
-}
-.product4Box{
-    width: 20%;
-    height:auto;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-right: 30px;
 
-}
-.product5Box{
-    width: 20%;
-    height:auto;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;   
-    border-right: 30px;
 
-}
-.product6Box{
-    width: 20%;
-    height:auto;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-    border-right: 30px;
 
-}
+
+
 .product2imgbox{
     width: 100%;
     height:150px;
@@ -287,7 +416,7 @@
     width: 100%;
     height: 200px;
     border: inherit;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     background-color: white;
     display: flex;
     position: relative;
@@ -298,10 +427,9 @@
     border: inherit;
     display: flex;
     flex-direction:column;
-    justify-content:center;
     align-items: center;
-    gap: 10px
-    ;
+    gap: 10px;
+    padding-top: 10px;
 }
 .product2cont1iconbox{
     width:20%;
@@ -310,29 +438,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
+    gap:5px;
 }
 .product2cont1iconboxicon1{
     width: 20px;
-    height: 20px;
-    border-radius: inherit;
+    height:15px;
+    border:inherit;
+    border-radius:10px;
+    background-color: rgb(218, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1iconboxicon1 p{
+
+    color: white;
 }
 .product2cont1iconboxicon2{
     width: 20px;
-    height: 20px;
-    border-radius: inherit;
+    height:20px;
+    border:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.product2cont1iconboxico3{
+.product2cont1iconboxicon2 img{
+    width: 100%;
+    height: 100%;
+}
+.product2cont1iconboxicon3{
     width: 20px;
-    height: 20px;
-    border-radius: inherit;
+    height:20px;
+    border:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1iconboxicon3 img{
+    width: 100%;
+    height: 100%;
 }
 .product2cont1iconboxicon4{
     width: 20px;
-    height: 20px;
-    border-radius: inherit;
+    height:20px;
+    border:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product2cont1iconboxicon4 img{
+    width: 100%;
+    height: 100%;
 }
 .product2cont1Pricebox{
-    width:90%;
+    width:100%;
     height: 20px;
     border: inherit;
     display: flex;
@@ -344,7 +504,7 @@
     color: rgb(78, 77, 77);
 }
 .product2cont1Dealbox{
-    width: 90%;
+    width:100%;
     height: 20px;
     border: inherit;
     display: flex;
@@ -356,7 +516,7 @@
     color: black;
 }
 .product2cont1Datebox{
-    width: 90%;
+    width:100%;
     height: 20px;
     border: inherit;
     display: flex;
@@ -369,13 +529,19 @@
     color: rgb(78, 77, 77);
 }
 .product2cont1Personbox{
-    width:90%;
+    width:100%;
     height: 20px;
     border: inherit;
     display: flex;
     align-items: center;
     padding-left:20px;
-
+    gap: 5px;
+}
+.product2cont1Personbox_img{
+    width: 20px;
+    height:20px;
+    border:1px solid rgb(110, 110, 110);
+    border-radius: 50px;
 }
 .product2cont1botombox{
     width:100%;
@@ -395,6 +561,7 @@
     align-items: center;
 }
 .product2cont1botomboxActivity p{
+    color: rgb(117, 116, 116);
     font-size:15px;
 }
 .product2cont1botomboxPerson{
@@ -404,6 +571,7 @@
     display: flex;
 }
 .product2cont1botomboxPerson p{
+    color:rgb(117, 116, 116);
     font-size: 15px;
 }
 .product2cont1botomboxPersonnDate{
@@ -417,7 +585,7 @@
 .product2cont1botomboxPersonnImg{
     width:40%;
     height: 100%;
-    border: inherit;
+    border:inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,7 +593,7 @@
 .product2cont1botomboxPersonnImg div{
     width: 20px;
     height:20px;
-    border: inherit;
+    border:1px solid rgb(110, 110, 110);
     border-radius: 50px;
 }
 
