@@ -4,25 +4,32 @@
     position: absolute;
     top: 100px;
     left:550px;
-    border: 1px solid red;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    border:1px solid rgb(119, 119, 119);
+            
 }
 .inputbox{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap:5px;
+    padding: 20px 0px 0px 20px;
 }
-.input{
-    width: 100px;
-    height: 40px;
-    border: inherit;
+input{
+    width: 150px;
+    height:30px;
+}
+.select1{
+    width: 150px;
+}
+.select2{
+    width: 150px;
 }
 .modalbutton{
-    width: 200px;
+    width:200px;
     height: 50px;
-    border: inherit;
     background-color: rgb(165, 241, 77);
     display: flex;
     justify-content: center;

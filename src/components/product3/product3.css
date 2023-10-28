@@ -1,8 +1,13 @@
 .productbox{
     width:100%;
-    height:auto;
-    border:1px solid red;
+    height:550px;
+    /* border:1px solid red; */
     display: flex;
     justify-content: center;
     gap: 20px;
+
+}
+body{
+    background-image: url(../background.jpg);
+    background-size: cover;
 }

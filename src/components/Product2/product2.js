@@ -5,7 +5,7 @@ import { setcreateData } from "../../store"
 export const Product2 = ({handlerEdit}) =>{
     return (
         
-        <div className="bigbox">
+      
             <div className="head">
                 <div className="headtopbox">
 
@@ -81,11 +81,6 @@ export const Product2 = ({handlerEdit}) =>{
 
             </div>
             </div>
-            </div>
-    
-        
-        
-
     )
 }
 

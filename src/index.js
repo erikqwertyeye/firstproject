@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import {store} from './store/store'
+import {store} from './store/store';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Login } from './components/login/login';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<App />} />
+   
+    </Routes>
+    </BrowserRouter>
     </Provider>
-    
   </React.StrictMode>
 );
 

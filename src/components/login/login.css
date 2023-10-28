@@ -1,0 +1,53 @@
+.loginpage{
+    width: 400px;
+    height: 300px;
+    gap: 5px;   
+    padding:10px 0px 0px 10px;
+    background-color: white;
+    border:2px solid rgb(119, 119, 119);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left:600px;
+    top: 200px; 
+    
+}
+.loginpage form label{
+    display:flex;
+    flex-direction: column;
+    /* border:  1px solid red; */
+    gap:10px;
+}
+.loginpage form label input{
+    border:2px solid rgb(119, 119, 119);
+
+}
+
+.loginName{
+    width: 70%;
+    height: 30px;
+    border: inherit;
+}
+.loginSurname{
+    width: 70%;
+    height: 30px;
+    border: inherit;
+}
+.loginNumber{
+    width: 70%;
+    height: 30px;
+    border: inherit;
+}
+.loginpassword{
+    width: 70%;
+    height: 30px;
+    border: inherit;
+}
+.loginbutton{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
